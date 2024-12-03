@@ -8,13 +8,14 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
-        if (prevProgress >= 33) {
+        if (prevProgress >= 100) {
           clearInterval(timer);
-          return 33;
+          window.location.href = 'https://thptchuyenbentre.edu.vn';
+          return 100;
         }
         return prevProgress + 1;
       });
-    }, 100);
+    }, 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -26,7 +27,7 @@ export default function Home() {
         <div className="text-center mb-12 transform hover:scale-105 transition-transform duration-300">
           <div className="relative w-32 h-32 mx-auto mb-6 rounded-full bg-white dark:bg-gray-800 shadow-lg p-4">
             <Image
-              src="/Logo2.png"
+              src="/BenTreHighSchool.jpg"
               alt="Logo"
               width={96}
               height={96}
@@ -34,7 +35,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
-            THPT Trần Văn Ơn - Châu Thành - Bến Tre
+            Trường Trung học phổ thông chuyên Bến Tre
           </h1>
         </div>
         

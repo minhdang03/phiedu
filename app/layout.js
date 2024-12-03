@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "THPT Trần Văn Ơn - Comming soon",
+  title: "Trường Trung học phổ thông chuyên Bến Tre - Comming soon",
   description: "Comming soon",
 };
 
